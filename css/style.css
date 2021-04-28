@@ -1,0 +1,224 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700,700italic&display=swap&subset=cyrillic-ext");
+
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	color: #000;
+	line-height: 1;
+	padding: 10px 10px 50px 10px;
+}
+/* .................... */
+
+/* ПРИМЕНЯЮ *BACKGROUND* К БЛОКАМ */
+
+.block {
+	display: inline-block;
+	color: #ffffff;
+	background: orange url('../img/9.jpg') 0 0 / 70px repeat fixed;
+	max-width:400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+	/* background: url('../img/7.jpg') center / cover no-repeat;
+	background-repeat: no-repeat;
+	background-color: orange;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed; */
+}
+
+.block__text {
+	display: inline-block;
+	background: #ff0000 url('../img/12.jpg') left top / 80px no-repeat scroll;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.block__paragraph {
+	display: inline-block;
+	background: #ff0000 url('../img/12.jpg') center 50px / 100px no-repeat scroll;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.block__item {
+	display: inline-block;
+	background: #ff0000 url('../img/12.jpg') right bottom / 150px no-repeat scroll;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+.block__greenyellow {
+	display: inline-block;
+	background: greenyellow url('../img/13.jpg') 0 0 / 200px auto repeat-x;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+.block__items {
+	display: inline-block;
+	color: #fff;
+	background: rgb(255, 47, 47) url('../img/13.jpg') 0 0 / 200px auto repeat-y;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+.paragraph {
+	display: inline-block;
+	color: #fff;
+	background: url('../img/12.jpg') center / 150px repeat-y, url('../img/13.jpg') 0 0 / cover no-repeat fixed;
+	max-width: 400px;
+	height: 200px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.block__ipsum {
+	display: block;
+	color: #fff;
+	background: url('../img/8.jpg') bottom / 50px repeat-y, url('../img/12.jpg') bottom / 50px repeat-x, url('../img/6.jpg') top / 40px repeat-x, url('../img/13.jpg') right / 50px repeat-y, url('../img/9.jpg') left / 50px repeat-y fixed, url('../img/12.jpg') center / 100px repeat-x, url('../img/8.jpg') center / cover no-repeat fixed;
+	max-width: 600px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+}
+
+.block__ident {
+	display: inline-block;
+	color: #fff;
+	background: orangered url('../img/7.jpg') center / cover no-repeat scroll;
+	max-width: 700px;
+	height: 400px;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/* ПРИМЕНЯЮ *BACKGROUND* К НУМЕРОВАННОМУ СПИСОКУ */
+
+
+.list {
+	font-size: 20px;
+}
+.list li {
+	color: blue;
+	background: url('../img/галочка.jpg') 0 -10px / 40px no-repeat;
+	min-height: 88px;
+	padding: 0px 0px 0px 50px;
+	margin: 50px 0px 10px 0px;
+}
+
+
+
+/* ПРИМЕНЯЮ *BACKGROUND* К ССЫЛКЕ (КНОПКЕ) */
+
+.button {
+	max-width: 300px;
+	margin: 20px;
+	font-family: lato;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	padding: 15px 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	box-shadow: 0px 5px 2px 0px rgba(16, 5, 168, 0.637);
+	background: #ff0000 url('../img/7.jpg') 0 0 no-repeat;
+}
+
+.button__2 {
+	max-width: 300px;
+	font-size: 20px;
+	margin: 20px;
+	font-family: lato;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding: 15px 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	box-shadow: 0px 5px 2px 0px rgba(168, 5, 5, 0.637);
+	background-color: red;
+	background: #ff0000;
+}
+
+.button__2 span {
+	padding: 0px 0px 0px 50px;
+	display: inline-block;
+	text-align: left;
+	background: #ff0000  url('../img/12.jpg') 0 10px / 40px no-repeat;
+}
+
+.button__3 {
+	max-width: 300px;
+	margin: 20px;
+	font-family: lato;
+	color: #020202;
+	display: block;
+	text-align: center;
+	padding: 15px 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	box-shadow: 0px 5px 2px 0px rgba(157, 168, 5, 0.637);
+	background: #eeff01 url('../img/13.jpg') left / 50% no-repeat;
+	font-family: lato;
+	font-size: 20px;
+	line-height: 20px;
+	word-spacing: 20px;
+}
+
+.button__3 span {
+	width: 170px;
+	display: inline-block;
+	font-family: lato;
+	padding: 0px 30px;
+	font-size: 20px;
+	word-spacing: 5px;
+	color: #000000;
+	background: url('../img/9.jpg') 10px / 30px no-repeat;
+}
